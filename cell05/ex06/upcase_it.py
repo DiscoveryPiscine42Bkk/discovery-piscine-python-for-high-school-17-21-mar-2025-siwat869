@@ -1,9 +1,9 @@
 import sys
 
-def main():
+def up():
     if len(sys.argv) != 2:
         print("none")
     else:
-        print(sys.argv,"INITIATION")
+        print(sys.argv[1].upper())
 
-main()
+up()

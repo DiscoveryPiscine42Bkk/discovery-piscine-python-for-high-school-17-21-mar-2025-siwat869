@@ -1,8 +1,8 @@
 import sys
 
-def main():
+def param():
     if len(sys.argv) > 1:
         print(sys.argv[1])
     else:
         print("none")
-main()
+param()
