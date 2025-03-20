@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 
 import sys
-
-if len(sys.argv) == 3:
-    keyword = sys.argv[1]
-    search_string = sys.argv[2]
-    
-    
-    count = search_string.count(keyword)
-    
-    if count > 0:
-        print(count)  
+import re 
+if len(sys.argv) >2:
+    keyword=sys.argv[1]
+    search=sys.argv[2]
+    matched=re.findall(keyword,search)
+    if len(matched)>1:
+        print(len(matched))
     else:
-        print("none") 
+        print("none")
 else:
-    print("none")  
+    print("none")

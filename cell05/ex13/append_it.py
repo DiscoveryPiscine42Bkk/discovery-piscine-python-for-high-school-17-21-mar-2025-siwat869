@@ -4,5 +4,5 @@ if len(sys.argv)<2:
     print("none")
 else:
     for pram in sys.argv[1:]:
-        if not pram.emdswith("ism"):
+        if not pram.endswith("ism"):
             print(f"{pram}ism")
